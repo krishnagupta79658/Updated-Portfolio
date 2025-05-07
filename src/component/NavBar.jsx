@@ -1,5 +1,5 @@
 import React from "react";
-import leetCode from "../assets/image/nav/leetcode.png";
+import leetCode from "../assets/image/nav/leetCode.png";
 import gfg from "../assets/image/nav/gfg.svg";
 import github from "../assets/image/nav/github.png";
 function NavBar() {
