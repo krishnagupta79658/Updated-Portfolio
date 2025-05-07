@@ -5,7 +5,7 @@ import github from "../assets/image/nav/github.png";
 function NavBar() {
   return (
     <div className=" w-[98%] left-0.5 sm:left-4 bg-[#E5E7EB] dark:bg-[#121212] h-fit fixed top-0 z-50 flex items-center justify-center ">
-      <div className="block bg-gradient-to-r from-[#31a169] to-[#000000] z-0 absolute bottom-0 left-0 h-full sm:h-16 rounded-lg w-full"></div>
+      <div className="hidden dark:block bg-gradient-to-r from-[#31a169] to-[#000000] z-0 absolute bottom-0 left-0 h-full sm:h-16 rounded-lg w-full"></div>
       
     <nav className=" flex items-center flex-col gap-2 sm:gap-1 sm:flex-row 
     sm:justify-between bg-black text-white px-2 py-3 sm:mt-6 ml-0.5 mb-0.5 sm:m-0.5  rounded-lg w-full relative">
@@ -24,11 +24,11 @@ function NavBar() {
       </div>
 
      
-      <div className="flex items-center gap-3.5 sm:gap-6 ">
+      <div className="flex items-center gap-3.5 sm:gap-6  ">
 
-        <a href="https://leetcode.com/u/abhishek_coder983/" target="_blank"><img src={leetCode} className="w-8 h-8" alt="leetcode" /></a>
-        <a href="https://www.geeksforgeeks.org/user/ruhelab5q54/" target="_blank"><img src={gfg} className="w-8 h-8" alt="gfg" /></a>
-        <a href="https://github.com/Abhicoder983" target="_blank"><img src={github} className="w-8 h-8" alt="github" /></a>
+        <a href="https://leetcode.com/u/abhishek_coder983/" target="_blank"><img src={leetCode} className="w-8 h-8 hover:scale-125 transition-all duration-150" alt="leetcode" /></a>
+        <a href="https://www.geeksforgeeks.org/user/ruhelab5q54/" target="_blank"><img src={gfg} className="w-8 h-8 hover:scale-125 transition-all duration-150" alt="gfg" /></a>
+        <a href="https://github.com/Abhicoder983" target="_blank"><img src={github} className="w-8 h-8 hover:scale-125 transition-all duration-150" alt="github" /></a>
       </div>
       </div>
     </nav>

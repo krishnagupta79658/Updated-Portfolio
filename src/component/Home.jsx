@@ -14,11 +14,11 @@ function Home(){
 
             <div className="lg:w-4/12 w-4/6 h-64 sm:h-80 lg:h-96  mx-4 flex flex-col justify-center  "> 
                 <img src={myPhoto} className=" h-full w-full inset-0 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] overflow-hidden"  alt="my photo"/>
-                <div className="flex flex-row gap-7 justify-evenly mt-6">
-                    <a href="https://x.com/Abhishe7716700"><img src={twitter} className="w-6 h-6 hover:scale-125 transition-all duration-150" alt="twitter" /></a>
-                    <a href="https://www.linkedin.com/in/abhishek-kumar983/"><img src={linkedin} className="w-6 h-6 hover:scale-125 transition-all duration-150" alt="linkedin" /></a>
-                    <a href="https://www.reddit.com/user/Potential_Bee_4426/"><img src={reddit} className="w-6 h-6 hover:scale-125 transition-all duration-150" alt="reddit" /></a>
-                    <a href="https://www.instagram.com/yourabhishek_a1/"><img src={instagram} className="w-6 h-6 hover:scale-125 transition-all duration-150"  alt="instagram" /></a>
+                <div className="flex flex-row gap-7 justify-evenly mt-5">
+                                    <a href="https://x.com/Abhishe7716700"><img src={twitter} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-lg dark:p-1" alt="twitter" /></a>
+                                    <a href="https://www.instagram.com/yourabhishek_a1/"><img src={instagram} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full"  alt="instagram" /></a>
+                                    <a href="https://www.linkedin.com/in/abhishek-kumar983/"><img src={linkedin} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full" alt="linkedin" /></a>
+                                    <a href="https://www.reddit.com/user/Potential_Bee_4426/"><img src={reddit} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full" alt="reddit" /></a>
                 
                 </div>
             </div>
