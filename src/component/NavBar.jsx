@@ -4,12 +4,14 @@ import gfg from "../assets/image/nav/gfg.svg";
 import github from "../assets/image/nav/github.png";
 function NavBar() {
   return (
-    <div className=" w-[98%] left-0.5 sm:left-4 bg-[#E5E7EB] dark:bg-[#121212] h-16 fixed top-0 z-50 flex items-center justify-center">
-    <nav className="flex items-center flex-col gap-2 sm:gap-1 sm:flex-row 
-    sm:justify-between  mt-6 bg-black text-white px-2 py-3 
-     rounded-lg w-full mx-auto ">   
+    <div className=" w-[98%] left-0.5 sm:left-4 bg-[#E5E7EB] dark:bg-[#121212] h-fit fixed top-0 z-50 flex items-center justify-center ">
+      <div className="block bg-gradient-to-r from-[#31a169] to-[#000000] z-0 absolute bottom-0 left-0 h-full sm:h-16 rounded-lg w-full"></div>
+      
+    <nav className=" flex items-center flex-col gap-2 sm:gap-1 sm:flex-row 
+    sm:justify-between bg-black text-white px-2 py-3 sm:mt-6 ml-0.5 mb-0.5 sm:m-0.5  rounded-lg w-full relative">
+
       {/* Logo or Brand */}
-      <div className="sm:w-5/12 font-semibold text-xl font-['acumin-pro, 'Acumin Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif']">
+      <div className="m-1 sm:w-5/12 font-semibold text-xl z-10 ">
         <span className="text-[#90EEBF] font-bold">{"<>"}</span> ABHISHEK KUMAR
       </div>
 
