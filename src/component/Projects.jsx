@@ -3,9 +3,9 @@ import weather from "../assets/image/projects/weather.png"
 import ATM_Banking from "../assets/image/projects/ATM_Banking.png"
 const Projects=()=>{
     return(
-        <div id="projects" className="w-[98%] mx-auto mt-10 flex flex-col gap-1 p-6 bg-white rounded-lg">   
+        <div id="projects" className="w-[98%] dark:bg-black mx-auto mt-10 flex flex-col gap-1 p-6 bg-white rounded-lg dark:border-2 dark:border-[#2D3236]">   
             <h3 className="text-xl text-[hsl(157,60%,30%)] flex  items-center justify-center w-fit"> <span className="bg-[hsl(157,60%,30%)] h-1.5 w-1.5 rounded-full mr-2"></span> Projects</h3>
-            <h1 className="text-4xl font-semibold text-[#111928]"> My Recent Works</h1>
+            <h1 className="text-4xl font-semibold text-[#111928] dark:text-[#DEE7F6]"> My Recent Works</h1>
             
             {/* projects 1 */}
             <div className="lg:w-11/12 mx-auto h-fit flex flex-col gap-4 justify-center items-center mt-10">
@@ -26,22 +26,22 @@ const Projects=()=>{
                     <div className="mt-7 w-full">
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
-                                <p className="text-[#59606E] text-lg">Project Name:</p>
-                                <p className="text-[#59606E] text-lg">Chatbot</p>
+                                <p className="text-[#59606E]  dark:text-[#DEE7F6]  text-lg">Project Name:</p>
+                                <p className="text-[#59606E]  dark:text-[#DEE7F6] text-lg">Chatbot</p>
                             </div>
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
-                                <p className="text-[#59606E] text-lg">Completion Time:</p>
-                                <p className="text-[#59606E] text-lg">3 months</p>
+                                <p className="text-[#59606E]  dark:text-[#DEE7F6] text-lg">Completion Time:</p>
+                                <p className="text-[#59606E]  dark:text-[#DEE7F6] text-lg">3 months</p>
                             </div>
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
-                                <p className="text-[#59606E] text-lg">Technologies:</p>
-                                <p className="text-[#59606E] text-lg flex-shrink">Django, Django Restframework, ReactJS and MongoDB</p>
+                                <p className="text-[#59606E]  dark:text-[#DEE7F6] text-lg">Technologies:</p>
+                                <p className="text-[#59606E]  dark:text-[#DEE7F6] text-lg flex-shrink">Django, Django Restframework, ReactJS and MongoDB</p>
                             </div>
                             <div className="flex mt-7 gap-2 ">
                                 <a href="https://chatbot-alpha-mauve-80.vercel.app/" target="_blank" className="underline text-[#1F7B57] text-xl hover:text-[rgb(248,100,101)] mr-7 "> Live Demo</a>
-                                <a href="https://github.com/Abhicoder983/CHATBOT" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black ">View on Github</a>
+                                <a href="https://github.com/Abhicoder983/CHATBOT" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black  dark:text-[#DEE7]">View on Github</a>
                             </div>
 
                         </div>
@@ -72,22 +72,22 @@ const Projects=()=>{
                     <div className="mt-7 w-full">
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
-                                <p className="text-[#59606E] text-lg">Project Name:</p>
-                                <p className="text-[#59606E] text-lg">Weather Web Application</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6] ">Project Name:</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6]">Weather Web Application</p>
                             </div>
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
-                                <p className="text-[#59606E] text-lg">Completion Time:</p>
-                                <p className="text-[#59606E] text-lg">3 days</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6] ">Completion Time:</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6]">3 days</p>
                             </div>
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
-                                <p className="text-[#59606E] text-lg">Technologies:</p>
-                                <p className="text-[#59606E] text-lg flex-shrink">Django, ReactJS, openweather API</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6] ">Technologies:</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6]  flex-shrink">Django, ReactJS, openweather API</p>
                             </div>
                             <div className="flex mt-7 gap-2 ">
                                 <a href="https://weather-app-one-neon-69.vercel.app/" target="_blank" className="underline text-[#1F7B57] text-xl hover:text-[rgb(248,100,101)] mr-7 "> Live Demo</a>
-                                <a href="https://github.com/Abhicoder983/weather_app" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black ">View on Github</a>
+                                <a href="https://github.com/Abhicoder983/weather_app" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black  dark:text-[#DEE7]">View on Github</a>
                             </div>
                         </div>
                     </div>
@@ -117,23 +117,23 @@ const Projects=()=>{
                     <div className="mt-7 w-full">
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
-                                <p className="text-[#59606E] text-lg">Project Name:</p>
-                                <p className="text-[#59606E] text-lg">Railway and Banking Management System</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6] ">Project Name:</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6 dark:text-[#DEE7]]">Railway and Banking Management System</p>
                             </div>
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
-                                <p className="text-[#59606E] text-lg">Completion Time:</p>
-                                <p className="text-[#59606E] text-lg">6 days </p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6] ">Completion Time:</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6] ">6 days </p>
                             </div>
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
-                                <p className="text-[#59606E] text-lg">Technologies:</p>
-                                <p className="text-[#59606E] text-lg flex-shrink">Python, Mysql</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6] ">Technologies:</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6]  flex-shrink">Python, Mysql</p>
                             </div>
 
                             <div className="flex mt-7 gap-2 ">
                                 
-                                <a href="https://github.com/Abhicoder983/Project-Related-to-Python" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black ">View on Github</a>
+                                <a href="https://github.com/Abhicoder983/Project-Related-to-Python" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black  dark:text-[#DEE7]">View on Github</a>
                             </div>
                         </div>
                     </div>

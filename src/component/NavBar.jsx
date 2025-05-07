@@ -4,7 +4,7 @@ import gfg from "../assets/image/nav/gfg.svg";
 import github from "../assets/image/nav/github.png";
 function NavBar() {
   return (
-    <div className=" w-[98%] left-0.5 sm:left-4 bg-[#E5E7EB] h-16 fixed top-0 z-50 flex items-center justify-center">
+    <div className=" w-[98%] left-0.5 sm:left-4 bg-[#E5E7EB] dark:bg-[#121212] h-16 fixed top-0 z-50 flex items-center justify-center">
     <nav className="flex items-center flex-col gap-2 sm:gap-1 sm:flex-row 
     sm:justify-between  mt-6 bg-black text-white px-2 py-3 
      rounded-lg w-full mx-auto ">   
