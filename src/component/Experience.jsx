@@ -2,7 +2,7 @@
 
 const Experience=()=>{
     return(
-        <div className="w-[98%] bg-white dark:bg-black mx-auto mt-10 flex flex-col gap-6 rounded-lg">
+        <div className="w-[98%] bg-white dark:bg-black mx-auto mt-10 flex flex-col gap-6 rounded-lg px-1">
             <div className="xl:w-9/12  w-full mx-auto xl:ml-10 py-7 ">
             
             <h1 className="text-xl  text-[#1F7B57]"> 
@@ -35,7 +35,7 @@ const Experience=()=>{
                     </div>
                     
                 </div>
-                <div className="w-full pl-10 "> 
+                <div className="w-full sm:pl-10 pl-6 pr-1 sm:pr-0 "> 
                 <h3 className="text-xl font-semibold text-[#1F7B57]"> Software Engineer</h3>
                 <div className="mt-6  ">
                     <div className="flex items-center gap-3">

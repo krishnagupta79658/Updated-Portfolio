@@ -3,7 +3,7 @@ import weather from "../assets/image/projects/weather.png"
 import ATM_Banking from "../assets/image/projects/ATM_Banking.png"
 const Projects=()=>{
     return(
-        <div id="projects" className="w-[98%] dark:bg-black mx-auto mt-10 flex flex-col gap-1 p-6 bg-white rounded-lg dark:border-2 dark:border-[#2D3236]">   
+        <div id="projects" className="w-[98%] dark:bg-black mx-auto mt-10 flex flex-col gap-1 sm:p-6 p-3 bg-white rounded-lg dark:border-2 dark:border-[#2D3236]">   
             <h3 className="text-xl text-[hsl(157,60%,30%)] flex  items-center justify-center w-fit"> <span className="bg-[hsl(157,60%,30%)] h-1.5 w-1.5 rounded-full mr-2"></span> Projects</h3>
             <h1 className="text-4xl font-semibold text-[#111928] dark:text-[#DEE7F6]"> My Recent Works</h1>
             
@@ -14,10 +14,10 @@ const Projects=()=>{
                     <img src={chatbot} className="rounded-lg h-full   " alt="" />
                     </div>
                     <div className="lg:w-7/12 h-fit">
-                    <h1 className="text-3xl text-[#1F7B57]">
+                    <h1 className="sm:text-3xl text-2xl text-[#1F7B57]">
                         Ai integrated into the Website Chatbot
                     </h1>
-                    <p className="mt-2 w-5/6 text-[#59606E] text-lg text-justify lg:text-start"> 
+                    <p className="mt-2 md:w-5/6 text-[#59606E] text-lg text-justify lg:text-start"> 
                         A website chatbot that uses the Gemini API to answer user queries based on the content of a given website.
                         </p>
 
@@ -60,10 +60,10 @@ const Projects=()=>{
                     <img src={weather} className="rounded-lg h-full " alt="" />
                     </div>
                     <div className="lg:w-7/12 h-fit">
-                    <h1 className="text-3xl text-[#1F7B57]">
+                    <h1 className="md:text-3xl text-2xl text-[#1F7B57]">
                         Giving Currect Weather of the City
                     </h1>
-                    <p className="mt-2 w-5/6 text-[#59606E] text-lg text-justify lg:text-start"> 
+                    <p className="mt-2 md:w-5/6 text-[#59606E] text-lg text-justify lg:text-start"> 
                     A weather web application that fetches real-time weather data using the OpenWeather API to display current conditions and forecasts based on user location.
                         </p>
 
@@ -105,10 +105,10 @@ const Projects=()=>{
                     <img src={ATM_Banking} className="rounded-lg h-full object-cover " alt="" />
                     </div>
                     <div className="lg:w-7/12 h-fit">
-                    <h1 className="text-3xl text-[#1F7B57]">
+                    <h1 className="sm:text-3xl text-[#1F7B57] text-2xl">
                         Two Projects Railway and another Banking Management System
                     </h1>
-                    <p className="mt-2 w-5/6 text-[#59606E] text-lg text-justify lg:text-start"> 
+                    <p className="mt-2 md:w-5/6 text-[#59606E] text-lg text-justify lg:text-start"> 
                        Railway and Banking Management System are two projects that include all the features and fuctionalities of a railway and banking system, respectively.
                        </p>
 

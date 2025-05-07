@@ -6,7 +6,7 @@ import ai from "../assets/image/offer/ai.png";
 import auth from "../assets/image/offer/auth.png";
 const  Offer=() =>{
         return(
-            <div className="dark:bg-black w-[98%] mx-auto my-10 bg-white rounded-lg flex flex-col dark:border-2 dark:border-[#2D3236]">
+            <div className="dark:bg-black w-[98%] mx-auto my-10 bg-white rounded-lg flex flex-col dark:border-2 dark:border-[#2D3236] px-1">
                 <div className="lg:w-5/6 mx-auto mt-10">
                     <p style={{ wordSpacing: "0.5rem" }} className=" font-semibold text-2xl text-[#1F7B57] text-center "> What do I offer </p>
                     <h1 className="text-center lg:text-6xl md:text-4xl sm:text-3xl text-2xl font-semibold text-[#111928] dark:text-white">
@@ -63,7 +63,7 @@ const  Offer=() =>{
                 <div className="w-full h-full flex flex-col rounded-lg border-2 border-[#DDE0E4] p-3">
                     <img src={ai} className="w-10 h-10" alt="" />
                     <div className="mt-3 flex-grow">
-                        <h1 className="text-3xl font-semibold text-[#111928]"> AI Integration</h1>
+                        <h1 className="text-3xl font-semibold text-[#111928] dark:text-white"> AI Integration</h1>
                         <p className="text-xl text-[#7C818C] text-justify"> 
                         Integrating AI-driven solutions to enhance user experience, utilizing machine learning models and APIs for automation and real-time insights.</p>
                     </div>
