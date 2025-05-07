@@ -21,7 +21,7 @@ function App() {
   },[isdark]);
   return (
     <>
-    <div className="fixed bottom-2 h-fit p-2 z-20 rounded-tl-xl rounded-bl-xl roun dark:bg-white text-white shadow-lg shadow-black/50 bg-black" onClick={()=>setIsDark(!isdark)}>
+    <div className="fixed right-0 bottom-2 h-fit p-2 z-20 rounded-tl-xl rounded-bl-xl roun dark:bg-white text-white shadow-lg shadow-black/50 bg-black" onClick={()=>setIsDark(!isdark)}>
       {/* {isdark?'<img src={openEye} classname="w-8 h-8" onclick={()=>setIsDark(!isdark)} alt="" />':'<img src={closeEye} classname="w-8 h-8" onclick={()=>setIsDark(!isdark)} alt="" />'} */}
       <img src={isdark?closeEye:openEye} className="w-8 h-8"  alt="" />
     </div>
