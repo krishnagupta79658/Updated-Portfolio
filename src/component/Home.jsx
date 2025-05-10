@@ -7,26 +7,130 @@ import twitter from '../assets/image/home/twitter.png';
 import linkedin from '../assets/image/home/linkedin.png';
 import reddit from '../assets/image/home/reddit.png';
 import instagram from '../assets/image/home/instagram.png';
+import gsap from 'gsap';
+import {useEffect, useRef} from 'react';
+
 function Home(){
+    const spanBack=useRef()
+    const spanFront=useRef()
+   
+    useEffect(() => {
+  async function func() {
+    spanBack.current.innerHTML = "{";
+    spanFront.current.innerHTML = "{";
+
+    const front = "Frontend Developer}";
+    const back = "Backend Developer}";
+    const splitFront = front.split("");
+    const splitBack = back.split("");
+
+    for (const e of splitBack) {
+        if(e==="}"){
+            spanBack.current.innerHTML += `<span>${e}</span>`;
+        }
+        else{
+      spanBack.current.innerHTML += `<span class="animaBack">${e}</span>`;
+        }
+    }
+
+    for (const e of splitFront) {
+      if(e==="}"){
+            spanFront.current.innerHTML += `<span>${e}</span>`;
+        }
+        else{
+      spanFront.current.innerHTML += `<span class="animaBack">${e}</span>`;
+        }
+    }
+
+    // Run GSAP after elements are in the DOM
+    const tl = gsap.timeline({ defaults: { duration: 0.1, delay: 0.5 } });
+
+    tl.to(".twitter", {
+      y: -8,
+      opacity: 1,
+      duration: 0.4,
+      ease: "power1.out",
+      yoyo: true,
+      repeat: 1,
+    });
+
+    tl.to(".insta", {
+      y: -8,
+      opacity: 1,
+      duration: 0.4,
+      ease: "power1.out",
+      yoyo: true,
+      repeat: 1,
+    });
+
+    tl.to(".linked", {
+      y: -8,
+      opacity: 1,
+      duration: 0.4,
+      ease: "power1.out",
+      yoyo: true,
+      repeat: 1,
+    });
+
+    tl.to(".reddit", {
+      y: -8,
+      opacity: 1,
+      duration: 0.4,
+      ease: "power1.out",
+      yoyo: true,
+      repeat: 1,
+    });
+
+  const tl1 = gsap.timeline({
+  repeat: -1,           
+     yoyo:true,
+    repeatDelay: 0.5,
+     delay:0.5, 
+});
+
+  tl1.from(".animaBack", {
+    
+  opacity: 0,
+  x: -10,
+  stagger: 0.05,         
+});
+
+tl1.from(".animaFront", {
+    
+  opacity: 0,
+  x: -10,
+  stagger: 0.05,         
+}, "+=0.2");              
+
+    
+
+  }
+
+  func();
+}, []);
+
     return(
+
+
         <div id="home">
         <div className="flex w-[98%] dark:bg-black bg-white min-h-[25rem] mx-auto gap-6 mt-24 sm:p-6 p-3 flex-col-reverse lg:flex-row justify-center items-center  inset-0 rounded-lg relative">
 
-            <div className="lg:w-4/12 w-4/6 h-64 sm:h-80 lg:h-96  mx-4 flex flex-col justify-center  "> 
-                <img src={myPhoto} className=" h-full w-full inset-0 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] overflow-hidden"  alt="my photo"/>
-                <div className="flex flex-row gap-7 justify-evenly mt-5">
-                                    <a href="https://x.com/Abhishe7716700"><img src={twitter} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-lg dark:p-1" alt="twitter" /></a>
-                                    <a href="https://www.instagram.com/yourabhishek_a1/"><img src={instagram} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full"  alt="instagram" /></a>
-                                    <a href="https://www.linkedin.com/in/abhishek-kumar983/"><img src={linkedin} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full" alt="linkedin" /></a>
-                                    <a href="https://www.reddit.com/user/Potential_Bee_4426/"><img src={reddit} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full" alt="reddit" /></a>
-                
+            <div className="md:w-2/6   mx-4 my-2  "> 
+            <div className='flex flex-col justify-center w-fit h-fit mx-auto'>
+                <img src={myPhoto} className=" mx-auto w-[290px] md:h-[289px] h-[294px] h- rounded-[600px]"  alt="my photo"/>
+                <div className="flex flex-row gap-7 justify-between mt-5 mx-8 " >
+                                    <a href="https://x.com/Abhishe7716700" className='twitter'><img src={twitter} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-lg dark:p-1" alt="twitter" /></a>
+                                    <a href="https://www.instagram.com/yourabhishek_a1/" className='insta'><img src={instagram} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full"  alt="instagram" /></a>
+                                    <a href="https://www.linkedin.com/in/abhishek-kumar983/" className='linked'><img src={linkedin} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full" alt="linkedin" /></a>
+                                    <a href="https://www.reddit.com/user/Potential_Bee_4426/" className='reddit'><img src={reddit} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full" alt="reddit" /></a>
+                                    </div>
                 </div>
             </div>
             <div className=" w-full sm:w-xl sm:mx-auto ">
                 <div className='h-fit flex flex-col justify-center p-1 lg:pr-4 '>
                     <h3 className=' text-sm text-[#767D84] dark:text-[#FFFFFF] lg:text-lg'> <span className='text-[rgb(248,100,101)]'>{"<span>"}</span> Hey  I'm Abhishek Kumar <span className='text-[#F86465]'>{"</span>"}</span></h3>
-                    <p className='text-xl text-[#111928] dark:text-white mt-5 lg:text-3xl '> Junior <span className='text-[#1F7B57]'>{'{Frontend Developer}'}</span> | ReactJS &</p>
-                    <p className='text-xl text-[#111928]  lg:text-3xl dark:text-white '> <span className='text-[hsl(157,60%,30%)]'> {'{Backend Developer}'}</span> | Django </p>
+                    <p className='text-xl text-[#111928] dark:text-white mt-5 lg:text-3xl '> Junior <span className='text-[#1F7B57] ' ref={spanFront}></span> | ReactJS &</p>
+                    <p className='text-xl text-[#111928]  lg:text-3xl dark:text-white '> <span className='text-[hsl(157,60%,30%)] ' ref={spanBack}> </span> | Django </p>
                     <p className='mt-5 text-sm lg:text-lg text-wrap text-[#6D737F] dark:text-[#727989] text-justify '> <span className='text-[#F86465] pl-1'>{"<p>"}</span>I’m a developer focused on <span className='text-[#F86465] pr-1'>Django , Django Restframework and ReactJS.</span>
                        I build full-stack web applications with clean APIs, responsive UIs, 
                     and efficient data management. <span className='text-[#F86465]'>{"</p>"}</span></p>

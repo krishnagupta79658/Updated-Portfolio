@@ -2,43 +2,37 @@ import React, { useRef } from "react";
 import leetCode from "../assets/image/nav/leetCode.png";
 import gfg from "../assets/image/nav/gfg.svg";
 import github from "../assets/image/nav/github.png";
-import { useGSAP } from "@gsap/react";
+
 import gsap  from "gsap";
+import { useGSAP } from "@gsap/react";
  
 function NavBar() {
-  const splitText=useRef
-  console.log(splitText)
+  const nav=useRef()
+  
   
   useGSAP(() => {
     
 
-   const tl = gsap.timeline({ defaults: { duration: 1 } ,ease: "power2.out" });
+  const tl = gsap.timeline({ delay:0.2 , defaults: { duration: 1 }});
 
-tl.fromTo('.nav', 
-  { y: -30, opacity: 0 }, 
-  { y: 0, opacity: 1 }
-)
+  tl.fromTo('.nav', { y: -30, opacity: 0 }, { y: 0, opacity: 1 })
+    .from('.link', { scale: 0, opacity: 0 })
+    .from('.codeLink', { x: -10, opacity: 0 }, "<")
+    .from('.name', { scale: 1, opacity: 0, x: 10 }, "<");
 
-.from('.link', 
-  { scale: -1, opacity: 0 }
-)
+  
 
-.from('.codeLink', 
-  { x: -10, opacity: 0 }, 
-  "<"
-);
-
-  }, []);
+  });
   
   
   
  
   return (
-    <div className=" w-[98%] left-0.5 sm:left-4 bg-[#E5E7EB] dark:bg-[#121212] h-fit fixed top-0 z-50 flex items-center justify-center ">
+    <div className=" w-[98%] left-0.5 sm:left-4 bg-[#E5E7EB] dark:bg-[#121212] h-fit fixed top-0 z-50 flex items-center justify-center " ref={nav}>
       <div className="hidden  dark:block bg-gradient-to-r from-[#31a169] to-[#000000] z-0 absolute bottom-0 left-0 h-full sm:h-16 rounded-lg w-full"></div>
       
     <nav className=" flex nav items-center flex-col gap-2 sm:gap-1 sm:flex-row 
-    sm:justify-between bg-black text-white px-2 py-3 sm:mt-6 ml-0.5 mb-0.5 sm:m-0.5  rounded-lg w-full relative">
+    sm:justify-between bg-black text-white px-2 py-3 sm:mt-6 ml-0.5 mb-0.5 sm:m-0.5  rounded-lg w-full relative" > 
 
       {/* Logo or Brand */}
       <div className="m-1 sm:w-5/12 font-semibold text-xl z-10 name ">
