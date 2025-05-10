@@ -8,7 +8,8 @@ import linkedin from '../assets/image/home/linkedin.png';
 import reddit from '../assets/image/home/reddit.png';
 import instagram from '../assets/image/home/instagram.png';
 import gsap from 'gsap';
-import {useEffect, useRef} from 'react';
+import {use, useEffect, useRef} from 'react';
+import { useGSAP } from '@gsap/react';
 
 function Home(){
     const spanBack=useRef()
@@ -52,7 +53,7 @@ function Home(){
       ease: "power1.out",
       yoyo: true,
       repeat: 1,
-    });
+    })
 
     tl.to(".insta", {
       y: -8,
@@ -61,7 +62,7 @@ function Home(){
       ease: "power1.out",
       yoyo: true,
       repeat: 1,
-    });
+    })
 
     tl.to(".linked", {
       y: -8,
@@ -70,7 +71,7 @@ function Home(){
       ease: "power1.out",
       yoyo: true,
       repeat: 1,
-    });
+    })
 
     tl.to(".reddit", {
       y: -8,
@@ -79,28 +80,31 @@ function Home(){
       ease: "power1.out",
       yoyo: true,
       repeat: 1,
-    });
+    })
 
   const tl1 = gsap.timeline({
   repeat: -1,           
      yoyo:true,
     repeatDelay: 0.5,
      delay:0.5, 
-});
+})
 
   tl1.from(".animaBack", {
     
   opacity: 0,
   x: -10,
   stagger: 0.05,         
-});
+})
 
 tl1.from(".animaFront", {
     
   opacity: 0,
   x: -10,
   stagger: 0.05,         
-}, "+=0.2");              
+}, "+=0.2")
+
+
+
 
     
 
@@ -108,6 +112,17 @@ tl1.from(".animaFront", {
 
   func();
 }, []);
+
+useGSAP(() => {
+    gsap.from(".photo", {
+    
+    opacity: 0,
+    duration: 1,
+    ease: "power1.out",
+    delay: 0.5,
+})
+})
+
 
     return(
 
@@ -117,7 +132,7 @@ tl1.from(".animaFront", {
 
             <div className="md:w-2/6   mx-4 my-2  "> 
             <div className='flex flex-col justify-center w-fit h-fit mx-auto'>
-                <img src={myPhoto} className=" mx-auto w-[290px] md:h-[289px] h-[294px] h- rounded-[600px]"  alt="my photo"/>
+                <img src={myPhoto} className="photo mx-auto w-[290px] md:h-[289px] h-[294px] h- rounded-[600px]"  alt="my photo"/>
                 <div className="flex flex-row gap-7 justify-between mt-5 mx-8 " >
                                     <a href="https://x.com/Abhishe7716700" className='twitter'><img src={twitter} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-lg dark:p-1" alt="twitter" /></a>
                                     <a href="https://www.instagram.com/yourabhishek_a1/" className='insta'><img src={instagram} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full"  alt="instagram" /></a>
