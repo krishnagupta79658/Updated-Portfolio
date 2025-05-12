@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
 const FooterForm = () => {
     gsap.registerPlugin(ScrollTrigger);
     useGSAP(() => {
@@ -37,10 +38,13 @@ const FooterForm = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [company, setCompany] = useState("");
+    const [designation, setDesignation] = useState("");
+    const[submit,setSubmit]=useState('Send Message');
     let handleSubmit = async (e) => {
 
         e.preventDefault();
-        if (name === "" || email === "" || message === "") {
+        if (name === "" || email === "" || message === "" || company === "" || designation === "") {
             toast.error("Please fill in all fields.");
             return;
         }
@@ -53,31 +57,37 @@ const FooterForm = () => {
             return;
         }
         // Handle form submission logic here
-        var data={
-            'name': name,
-            'email': email,
-            'message': message
+        const data={
+            "name": name,
+            "user_email": email
         }
+        console.log(data)
 
-        try{
-              const response = await fetch('https://your-api-endpoint.com/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
+        setSubmit('Sending...');
+        emailjs.send("service_2r9mfgp","template_obkrxgq",data,"zv4yej4efIgH4bstZ")
+        .then((result) => {
+          console.log(result);
+          
+          toast.success('Message sent successfully!');
+      }).catch((error) => {
+          console.log(error);
+        
+          toast.error('Something went wrong. Please try again later.');
       });
-
-      if (response.ok) {
-        toast.success("Message sent successfully!");
-      } else {
-        toast.error("Failed to send message");
-      }
-        }
-        catch(e){
-            toast.error("Something went wrong");
-            console.log(e)
-        }
+    var yourEmailData={
+        "name": name,
+        "user_email": email,
+        "company_name": company,
+        "designation": designation,
+    }
+      emailjs.send("service_2r9mfgp","template_dqdke2o",yourEmailData,"zv4yej4efIgH4bstZ")
+        setName("")
+        setEmail("")
+        setMessage("")
+        setCompany("")
+        setDesignation("")
+        submit('Send Message')
+      
     }
 
     return (
@@ -106,12 +116,14 @@ const FooterForm = () => {
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-3">
                     <input type="text" placeholder="Your Name"  className="contactField  border-2 border-gray-500 focus:border-transparent  rounded-lg p-2 outline-none focus:ring-2 focus:ring-[#1F7B57] dark:text-[#a0a0a0] " onChange={(e)=>setName(e.target.value)} value={name} />
                     <input type="text" placeholder="Your Email"  className="contactField border-2 border-gray-500 focus:border-transparent  rounded-lg p-2 outline-none focus:ring-2 focus:ring-[#1F7B57] dark:text-[#a0a0a0]" onChange={(e)=>setEmail(e.target.value)} value={email} />
+                    <input type="text" placeholder="your Designation" className="contactField border-2 border-gray-500 focus:border-transparent  rounded-lg p-2 outline-none focus:ring-2 focus:ring-[#1F7B57] dark:text-[#a0a0a0]" onChange={(e)=>setDesignation(e.target.value)} value={designation}  />
+                    <input type="text" placeholder="your Company" className="contactField border-2 border-gray-500 focus:border-transparent  rounded-lg p-2 outline-none focus:ring-2 focus:ring-[#1F7B57] dark:text-[#a0a0a0]" onChange={(e)=>setCompany(e.target.value)} value={company} />
                     <textarea name="" id="" cols="30" rows="5" placeholder="Your Message" className="contactField border-2 border-gray-500 focus:border-transparent  rounded-lg p-2 outline-none focus:ring-2 focus:ring-[#1F7B57] dark:text-[#a0a0a0]" onChange={(e)=>setMessage(e.target.value)} value={message}></textarea>
-                    <button className="bg-[#1F7B57] dark:bg-transparent dark:border-[#1F7B57] dark:border-2 dark:text-[#1F7B57] text-white py-2 px-4 rounded-lg  hover:text-white hover:bg-[#1F7B57] transition-all duration-150">Send Message</button>
+                    <button className="bg-[#1F7B57] dark:bg-transparent dark:border-[#1F7B57] dark:border-2 dark:text-[#1F7B57] text-white py-2 px-4 rounded-lg  hover:text-white hover:bg-[#1F7B57] transition-all duration-150">{submit}</button>
                 </form>
             </div> 
         </div>
     );
 }
- 
+
 export default FooterForm;
