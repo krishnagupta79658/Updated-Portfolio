@@ -130,7 +130,7 @@ useGSAP(() => {
                         </p>
 
                     <p className="mt-5 text-[#F86465] text-lg"> Project Info</p>
-                    <img src={chatbot} className="rounded-lg h-full lg:hidden projectImg1 z-30 " alt="" />
+                    <img src={chatbot} className="rounded-lg h-full lg:hidden  z-30 smProjectImg1 " alt="" />
                     <div className="mt-7 w-full">
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
@@ -176,7 +176,7 @@ useGSAP(() => {
                         </p>
 
                     <p className="mt-5 text-[#F86465] text-lg"> Project Info</p>
-                    <img src={weather} className="rounded-lg h-full lg:hidden projectImg2 z-20 " alt="" />
+                    <img src={weather} className="rounded-lg h-full lg:hidden z-20 smProjectImg2 " alt="" />
                     <div className="mt-7 w-full">
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
@@ -221,7 +221,7 @@ useGSAP(() => {
                        </p>
 
                     <p className="mt-5 text-[#F86465] text-lg"> Project Info</p>
-                    <img src={ATM_Banking} className="rounded-lg h-full lg:hidden projectImg3 z-10 " alt="" />
+                    <img src={ATM_Banking} className="rounded-lg h-full lg:hidden z-10 smProjectImg3 " alt="" />
                     <div className="mt-7 w-full">
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">

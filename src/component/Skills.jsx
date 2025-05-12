@@ -48,7 +48,7 @@ const Skills=()=>{
                 <h1 className="text-5xl font-semibold text-black dark:text-[#DAE2F0] " id="titleSkills"> My Skills</h1>
             </div>
             <div className="flex lg:flex-row flex-col-reverse justify-between items-center gap-4 mt-4 w-full ">
-            <div className="lg:w-5/12 w-8/12 mx-auto  h-fit py-4 border-2 border-gray-200 rounded-lg overflow-x-hidden dark:bg-black dark:border-2 dark:border-[#2D3236]">
+            <div className="lg:w-5/12 w-11/12 mx-auto  h-fit py-4 border-2 border-gray-200 rounded-lg overflow-x-hidden dark:bg-black dark:border-2 dark:border-[#2D3236]">
             <div className="flex w-full mx-auto justify-between  " id="skillsDia">
                 <div className="min-w-24 sm:w-34  h-full flex justify-center sm:mx-2 py-2">
                     <img src={django} alt="django" className="w-16 h-16 "/>
