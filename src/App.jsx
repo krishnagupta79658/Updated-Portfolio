@@ -9,7 +9,8 @@ import FooterForm from "./component/FooterForm.jsx"
 import openEye from "./assets/image/darkModeEye/openEye.png";
 import closeEye from "./assets/image/darkModeEye/closeEye.png";
 import { useEffect , useState } from "react"; 
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
       <Skills />
       <Education />
       <FooterForm />
-      
+      <ToastContainer />
     </>
   );
 }

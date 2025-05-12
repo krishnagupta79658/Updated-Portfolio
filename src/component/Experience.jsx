@@ -1,6 +1,23 @@
+import { useGSAP } from "@gsap/react";
+import gsap from 'gsap';
 
 
 const Experience=()=>{
+    useGSAP(()=>{
+        gsap.from('.experience',{
+            x:-15,
+            opacity:0,
+            stagger:0.3,
+            duration:0.5,
+            scrollTrigger:{
+                start:"top 50%",
+                toggleActions: "play none none reverse",
+                trigger:".experience",
+               
+            }
+        })
+        
+    })
     return(
         <div className="w-[98%] bg-white dark:bg-black mx-auto mt-10 flex flex-col gap-6 rounded-lg px-1">
             <div className="xl:w-9/12  w-full mx-auto xl:ml-10 py-7 ">
@@ -12,21 +29,21 @@ const Experience=()=>{
                 <h1 className="sm:text-5xl text-3xl font-semibold text-[#5F6671] " >Programming techniques</h1>
             <div className="mt-10 grid sm:grid-cols-2 sm:grid-rows-1 grid-cols-1 grid-rows-2 gap-6">
                 <div className="w-full h-full  rounded-lg flex flex-col  ">
-                    <div className="border-2 border-[#cfcfd0] xl:pl-4 py-3  rounded-xl flex">
+                    <div className="border-2 border-[#cfcfd0] xl:pl-4 py-3  rounded-xl flex experience">
                         <img src="https://images.yourstory.com/cs/images/companies/6c230f73b0d9-pngtransperant-1673268471977.png?fm=auto&ar=1:1&mode=fill&fill=solid&fill-color=fff" className="w-14 h-14   my-auto mx-3 " alt="" />
                         <div className="flex-grow">
                         <h1 className="text-2xl font-semibold text-[#111928] dark:text-white"> Technohacks</h1>
                         <p className="text-lg text-[#5F6673] ml-2 xl:inline block "> Python developer / </p><span className="text-[#F86465] "> Nov. 2023 – Dec. 2023</span>
                         </div>
                     </div>
-                    <div className="border-2 border-[#cfcfd0] xl:pl-4 py-3 mt-8 rounded-xl flex">
+                    <div className="border-2 border-[#cfcfd0] xl:pl-4 py-3 mt-8 rounded-xl flex experience">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK1C6QJwhM6bC0NqNyxiX3-HwyZTiEr91d5g&s" className="w-14 h-14 my-auto mx-3 " alt="" />
                         <div className="flex-grow">
                         <h1 className="text-2xl font-semibold text-[#111928] dark:text-white"> Google Developer Student Club</h1>
                         <p className="text-lg text-[#5F6673] ml-2 xl:inline block"> Web developer /</p> <span className="text-[#F86465] "> Oct. 2023 – Nov. 2023</span>
                         </div>
                     </div>
-                    <div className="border-2 border-[#cfcfd0] xl:pl-4 py-3 mt-8 rounded-xl flex">
+                    <div className="border-2 border-[#cfcfd0] xl:pl-4 py-3 mt-8 rounded-xl flex experience">
                     <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Csi_logo_india.jpg" className="w-14 h-14 my-auto mx-3" alt="" />
                         <div className="flex-grow">
                         <h1 className="text-2xl font-semibold text-[#111928] dark:text-white"> Computer Society of India</h1>

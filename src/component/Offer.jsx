@@ -20,7 +20,7 @@ const  Offer=() =>{
            trigger:'.offerItem',
            start:"top 50%",
            toggleActions: "play none none reverse",
-           markers:true,
+           
          
             
         }
@@ -35,7 +35,7 @@ const  Offer=() =>{
            trigger:'.offer',
            start:"top 80%",
             
-          markers:true,
+          
            toggleActions: "play none none none"
             
         }

@@ -1,10 +1,37 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap"
+
 function Work(){
+  useGSAP(()=>{
+    gsap.from("#education",{
+      opacity:0,
+      x:-8,
+      duration:0.5,
+      ease:"power2.in",
+      scrollTrigger:{
+        trigger:'#education',
+        start:"top 80%",
+        toggleActions: "play none none reverse",
+      }
+    })
+     gsap.from("#certification",{
+      opacity:0,
+      x:-8,
+      duration:0.5,
+      ease:"power2.in",
+      scrollTrigger:{
+        trigger:'#certification',
+        start:"top 80%",
+        toggleActions: "play none none reverse",
+      }
+    })
+  }) 
     return(
       <div className=" w-[98%] mx-auto flex lg:flex-row flex-col gap-6 mt-10 ">
       {/* Education Section */}
       <div className="bg-white dark:bg-black dark:border-2 dark:border-[#575757] lg:w-3/6 shadow-md   rounded-lg p-4">
         <h2 className="text-2xl font-semibold flex items-center gap-2 mb-4 dark:text-[#F4F4F6]">
-          <span className="text-green-600">📘</span> Education
+          <span className="text-green-600">📘</span><p id="education">Education</p> 
         </h2>
         <ul className="space-y-4 text-xl">
           <li  >
@@ -32,7 +59,7 @@ function Work(){
       {/* Certifications Section */}
       <div className="bg-white dark:bg-black dark:border-2 dark:border-[#575757] dark:text-white lg:w-3/6 shadow-md rounded-lg p-4 ">
         <h2 className="text-2xl  dark:text-whitefont-semibold flex items-center gap-2 mb-4">
-          <span className="text-green-600">📜</span> Certifications
+          <span className="text-green-600">📜</span> <p id="certification">Certifications</p>
         </h2>
         <ul className="space-y-4 text-xl">
           <li className="flex sm:flex-row flex-col justify-between sm:items-center items-end mb-7 sm:mb-0 border-b-2 border-gray-300 pb-3 sm:border-none">

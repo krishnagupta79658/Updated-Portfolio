@@ -8,7 +8,7 @@ import linkedin from '../assets/image/home/linkedin.png';
 import reddit from '../assets/image/home/reddit.png';
 import instagram from '../assets/image/home/instagram.png';
 import gsap from 'gsap';
-import {use, useEffect, useRef} from 'react';
+import { useEffect, useRef} from 'react';
 import { useGSAP } from '@gsap/react';
 
 function Home(){
@@ -90,16 +90,14 @@ function Home(){
 })
 
   tl1.from(".animaBack", {
-    
-  opacity: 0,
   x: -10,
+  opacity:0,
   stagger: 0.05,         
 })
 
 tl1.from(".animaFront", {
-    
-  opacity: 0,
   x: -10,
+  opacity:0,
   stagger: 0.05,         
 }, "+=0.2")
 
