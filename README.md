@@ -1,14 +1,53 @@
+# 🌟 Abhishek Kumar's Portfolio
 
-# HELLO EVERYONE
-## React + Vite
+Welcome to my personal portfolio website! I'm a passionate full-stack developer focused on building modern, responsive web apps using React, Django, and REST APIs.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+➡️ [Visit My Portfolio](https://abhishekkumar-lovat.vercel.app/)
 
-## Expanding the ESLint configuration
+---
+##Home page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+## 🧑‍💻 About Me
+
+Hi! I'm Abhishek Kumar, a developer with:
+- 💻 6 months of experience in **React**
+- ⚙️ 1 year working with **Django** (Python backend)
+- 🌐 Built full-stack projects like weather apps, chatbots, and dashboards
+- 📷 Also a content creator: Reading, Singing and dance
+
+---
+
+## 🚀 Projects
+
+| Project         | Tech Stack              | Description                                      |
+|----------------|-------------------------|--------------------------------------------------|
+| Weather App     | React + Django REST API | Real-time weather data with dynamic UI           |
+| Chatbot         | Django + JavaScript     | AI chatbot using natural language processing     |
+| Portfolio Site  | React                   | This very site you're viewing now                |
+
+---
+
+## 🛠️ Technologies & Tools
+
+- **Frontend:** React, Tailwind CSS, JavaScript, HTML, Email.
+- **Library:** EmailJS.
+- **Tools:** GitHub, VS Code, vercel.
+
+---
+
+## 📂 Folder Structure
+
+```bash
+portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── App.jsx
+├── README.md
+└── package.json
