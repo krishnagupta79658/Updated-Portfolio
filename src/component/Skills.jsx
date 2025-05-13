@@ -33,8 +33,6 @@ useEffect(() => {
   const skills = document.getElementById('skillsDia');
   const container = skills?.parentElement;
 
-  if (!skills || !container) return;
-
   const scrollWidth = skills.scrollWidth - container.clientWidth;
 
   gsap.to('#skillsDia', {

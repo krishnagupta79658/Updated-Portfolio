@@ -11,6 +11,7 @@ import gsap from 'gsap';
 import { useEffect, useRef} from 'react';
 import { useGSAP } from '@gsap/react';
 
+
 function Home(){
     const spanBack=useRef()
     const spanFront=useRef()
@@ -110,6 +111,32 @@ tl1.from(".animaFront", {
 
   func();
 }, []);
+    useEffect(()=>{
+      const taskToCount = (count) => {
+        var start =0;
+        const end=parseInt(document.querySelector(`.${count}`).textContent.replace("+",""));
+        console.log("abhishek",end)
+        const duration=1;
+        const timeToEachIncreament= duration/end
+        const intervalID=setInterval(() => {
+          start++;
+          document.querySelector(`.${count}`).textContent = start+'+';
+          if(start===end){
+            clearInterval(intervalID);
+          }
+        }, timeToEachIncreament*100);
+
+      }
+      
+      Promise.all([taskToCount('count1'),
+        taskToCount('count2'),
+        taskToCount('count3'),
+        taskToCount('count4')
+      ]).then(() => {
+        console.log("All tasks completed");
+      })
+      
+    },[])
 
 useGSAP(() => {
     gsap.from(".photo", {
@@ -156,22 +183,22 @@ useGSAP(() => {
         <div className='w-[98%] mt-4 mx-auto flex justify-evenly py-3 bg-white dark:bg-[#121212] sm:flex-row flex-col gap-10 rounded-lg shadow-md items-center sm:items-start'>
             <div className='sm:w-2/12 md:3/12 h-fit my-6  '>
             <img src={calendar} className='w-8 h-8 mx-auto sm:mx-0' alt="" /> 
-            <h3 className='text-black dark:text-white text-4xl font-semibold py-2 sm:text-start text-center '> 6+  </h3>
+            <h3 className='text-black dark:text-white text-4xl font-semibold py-2 sm:text-start text-center count1'> 6+  </h3>
             <p className='text-lg text-[#5F6673]'> Hey, months Experience </p>
             </div>
             <div className='sm:w-2/12 md:3/12 h-fit my-6 '>
             <img src={project} className='w-8 h-8 mx-auto sm:mx-0' alt="" />
-            <h3 className='text-black dark:text-white text-4xl font-semibold py-2 sm:text-start text-center'> 3+  </h3>
+            <h3 className='text-black dark:text-white text-4xl font-semibold py-2 sm:text-start text-center count2'> 3+  </h3>
             <p className='text-lg text-[#5F6673]'> Projects Completed </p>
             </div>
             <div className='sm:w-2/12 md:3/12 h-fit my-6 '>
             <img src={certificate} className='w-8 h-8 mx-auto sm:mx-0' alt="" />
-            <h3 className='text-black dark:text-white text-4xl font-semibold py-2 sm:text-start text-center'> 5+  </h3>
+            <h3 className='text-black dark:text-white text-4xl font-semibold py-2 sm:text-start text-center count3'> 5+  </h3>
             <p className='text-lg text-[#5F6673] '> Certificates Achieved </p>
             </div>
             <div className='sm:w-2/12 md:3/12 h-fit my-6 '>
             <img src={skills} className='w-8 h-8 mx-auto sm:mx-0' alt="" /> 
-            <h3 className='text-black dark:text-white text-4xl font-semibold py-2 sm:text-start text-center'>6+  </h3>
+            <h3 className='text-black dark:text-white text-4xl font-semibold py-2 sm:text-start text-center count4'>6+  </h3>
             <p className='text-lg text-[#5F6673] '> Technicals Skills </p>
             </div>
         </div>

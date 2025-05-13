@@ -10,7 +10,7 @@ function Work(){
       ease:"power2.in",
       scrollTrigger:{
         trigger:'#education',
-        start:"top 80%",
+        start:"top 50%",
         toggleActions: "play none none reverse",
       }
     })
@@ -21,7 +21,7 @@ function Work(){
       ease:"power2.in",
       scrollTrigger:{
         trigger:'#certification',
-        start:"top 80%",
+        start:"top 50%",
         toggleActions: "play none none reverse",
       }
     })
