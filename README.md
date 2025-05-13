@@ -37,11 +37,11 @@ Hi! I'm Abhishek Kumar, a developer with:
 
 ---
 
-** My Skills are:
+## My Skills are:
 
 ![Screenshot (412)](https://github.com/user-attachments/assets/6ea48607-3688-4e60-a640-8e69a1af06d5)
 
-** Contact US
+## Contact US:
 ![Screenshot (414)](https://github.com/user-attachments/assets/7d0bdfdc-0272-40e5-9a72-58b3859e3005)
 
 
