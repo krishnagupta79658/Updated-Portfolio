@@ -49,5 +49,10 @@ portfolio/
 │   ├── components/
 │   ├── pages/
 │   └── App.jsx
+└── .gitignore
 ├── README.md
+└── eslint.config.js
+└── index.html
+└── package-lock.json
 └── package.json
+└── vite.config.js
