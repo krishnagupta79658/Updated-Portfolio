@@ -53,7 +53,7 @@ const  Offer=() =>{
                 </div>
                 <div className="lg:w-5/6 mx-auto mt-16 mb-6 grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-3 grid-cols-1 grid-rows-6 gap-4 sm:gap-6 lg:gap-8 xl:gap-10">
                 <div className="offerItem w-full h-full flex flex-col rounded-lg border-2 border-[#DDE0E4] p-3">
-                    <img src={database} className="w-10 h-10" alt="" />
+                     <img src={development} className="w-10 h-10" alt="" />
                     <div className="mt-3 flex-grow">
                         <h1 className="text-3xl font-semibold text-[#111928] dark:text-white"> Web Development</h1>
                         <p className="text-xl text-[#7C818C] text-justify">
@@ -63,7 +63,8 @@ const  Offer=() =>{
                     </div>
                 </div>
                 <div className="offerItem w-full h-full flex flex-col rounded-lg border-2 border-[#DDE0E4] p-3">
-                <img src={API} className="w-10 h-10" alt="" />
+                
+                 <img src={database} className="w-10 h-10" alt="" />
                     <div className="mt-3 flex-grow">
                         <h1 className="text-3xl font-semibold text-[#111928] dark:text-white"> Database Management</h1>
                         <p className="text-xl text-[#7C818C] text-justify"> 
@@ -71,7 +72,8 @@ const  Offer=() =>{
                     </div>
                 </div>
                 <div className="offerItem w-full h-full flex flex-col rounded-lg border-2 border-[#DDE0E4] p-3">
-                    <img src={development} className="w-10 h-10" alt="" />
+                  
+                    <img src={API} className="w-10 h-10" alt="" />
                     <div className="mt-3 flex-grow">
                         <h1 className="text-3xl font-semibold text-[#111928] dark:text-white"> API Development</h1>
                         <p className="text-xl text-[#7C818C] text-justify"> 
