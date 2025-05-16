@@ -86,7 +86,7 @@ const FooterForm = () => {
         setMessage("")
         setCompany("")
         setDesignation("")
-        submit('Send Message')
+        setSubmit('Send Message')
       
     }
 
