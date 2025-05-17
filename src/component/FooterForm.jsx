@@ -79,6 +79,7 @@ const FooterForm = () => {
         "user_email": email,
         "company_name": company,
         "designation": designation,
+        "msg": message
     }
       emailjs.send("service_2r9mfgp","template_dqdke2o",yourEmailData,"zv4yej4efIgH4bstZ")
         setName("")
