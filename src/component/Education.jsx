@@ -66,7 +66,7 @@ function Work(){
             <div className="h-fit w-fit">
             <p className="text-gray-500">18th Apr. 2025: <span className="text-green-700 font-medium">API in Django Rest Framework</span></p>
             <div className="w-full flex flex-col items-end dark:text-white">
-            <p className="text-xl sm:w-3/4  ">Utilized big data tools for advanced analytics and insights.</p>
+            <p className="text-xl sm:w-3/4  ">Certified in Django Rest Framework for developing APIs and it designed by META Community on coursera plateform</p>
             </div>
             </div>
             <div className="text-xl text-[#F86465] pr-4">
@@ -77,7 +77,7 @@ function Work(){
             <div className="h-fit w-fit">
             <p className="text-gray-500">14th Dec. 2024: <span className="text-green-700 font-medium">Django Web Framework</span></p>
             <div className="w-full flex flex-col items-end dark:text-white">
-            <p className="text-xl sm:w-3/4  ">Utilized big data tools for advanced analytics and insights.</p>
+            <p className="text-xl sm:w-3/4  ">Certified in Django Web Framework for developing web applications and it designed by META Community on coursera plateform</p>
             </div>
             </div>
             <div className="text-xl text-[#F86465] pr-4">
@@ -88,7 +88,7 @@ function Work(){
             <div className="h-fit w-fit">
             <p className="text-gray-500">23th Mar. 2022: <span className="text-green-700 font-medium">Python Developer</span></p>
             <div className="w-full flex flex-col items-end dark:text-white">
-            <p className="text-xl sm:w-3/4  ">Utilized big data tools for advanced analytics and insights.</p>
+            <p className="text-xl sm:w-3/4  ">Internship certifcate in Python developer and Certified by Technohacks Commmunity</p>
             </div>
             </div>
             <div className="text-xl text-[#F86465] pr-4">
