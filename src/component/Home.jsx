@@ -157,7 +157,7 @@ useGSAP(() => {
 
             <div className="md:w-2/6   mx-4 my-2  "> 
             <div className='flex flex-col justify-center w-fit h-fit mx-auto'>
-                <img src={myPhoto} className="photo mx-auto w-[290px] md:h-[289px] h-[294px] h- rounded-[600px]"  alt="my photo"/>
+                <img src={myPhoto} className="photo mx-auto w-[200px] h-[200px] md:h-[250px] md:w-[250px] lg:w-[300px] lg:h-[300px] rounded-full"  alt="my photo"/>
                 <div className="flex flex-row gap-7 justify-between mt-5 mx-8 " >
                                     <a href="https://x.com/Abhishe7716700" className='twitter'><img src={twitter} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-lg dark:p-1" alt="twitter" /></a>
                                     <a href="https://www.instagram.com/yourabhishek_a1/" className='insta'><img src={instagram} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full"  alt="instagram" /></a>

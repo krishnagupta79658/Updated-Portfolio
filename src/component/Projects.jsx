@@ -116,7 +116,7 @@ useGSAP(() => {
             <h1 className="text-4xl font-semibold text-[#111928] dark:text-[#DEE7F6]"> My Recent Works</h1>
             
             {/* projects 1 */}
-            <div className="lg:w-11/12 dark:bg-black bg-white mx-auto h-fit flex flex-col gap-4 justify-center items-center mt-10 z-30">
+            <div className="lg:w-11/12 dark:bg-black bg-white mx-auto h-fit flex flex-col gap-4 justify-center items-center mt-10 z-30 ">
                 <div className="w-full  flex flex-row justify-between lg:gap-4 rounded-lg border-2 border-[#737373] p-4">
                     <div className="w-4/12 hidden lg:block">
                     <img src={chatbot} className="rounded-lg h-full projectImg1 z-30 " alt="" />
@@ -162,7 +162,7 @@ useGSAP(() => {
 
 
             {/* project 2 */}
-            <div className="lg:w-11/12 dark:bg-black bg-white mx-auto h-fit flex flex-col gap-4 justify-center items-center mt-10 z-20">
+            <div className="lg:w-11/12 dark:bg-black bg-white mx-auto h-fit flex flex-col gap-4 justify-center items-center mt-10 z-20 ">
                 <div className="w-full  flex flex-row-reverse justify-between lg:gap-4 rounded-lg border-2 border-[#737373] p-4">
                     <div className="w-4/12 hidden lg:block">
                     <img src={weather} className="rounded-lg h-full projectImg2 z-20 " alt="" />
@@ -207,7 +207,7 @@ useGSAP(() => {
 
 
             {/* project 3 */}
-            <div className="lg:w-11/12 dark:bg-black bg-white mx-auto h-fit flex flex-col gap-4 justify-center items-center mt-10 z-10">
+            <div className="lg:w-11/12 dark:bg-black bg-white mx-auto h-fit flex flex-col gap-4 justify-center items-center mt-10 z-10 ">
                 <div className="w-full  flex flex-row justify-between lg:gap-4 rounded-lg border-2 border-[#737373] p-4">
                     <div className="w-4/12 hidden lg:block">
                     <img src={ATM_Banking} className="rounded-lg h-full object-cover projectImg3 z-10 " alt="" />
