@@ -9,22 +9,29 @@ import FooterForm from "./component/FooterForm.jsx"
 import openEye from "./assets/image/darkModeEye/openEye.png";
 import closeEye from "./assets/image/darkModeEye/closeEye.png";
 import { useEffect , useState } from "react"; 
+import LoadingPage from "./component/loadingPage.jsx";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-
-  const [isdark , setIsDark] = useState(false);
+  const [loading, setloading] =useState(true)
+  const [isdark , setIsDark] = useState(true);
   useEffect(() => {
-    console.log('abhishek')
-    console.log(isdark)
     document.documentElement.classList.toggle('dark', isdark);
   },[isdark]);
+
+  useEffect(()=>{
+    const timer=setTimeout(() => {
+      setloading(false)
+    }, 2000);
+    return ()=>clearTimeout(timer)
+  })
   return (
-    <>
-    <div className="fixed right-0 bottom-2 h-fit p-2  rounded-tl-xl rounded-bl-xl roun dark:bg-white text-white shadow-lg shadow-black/50 bg-black z-50" onClick={()=>setIsDark(!isdark)}>
-      {/* {isdark?'<img src={openEye} classname="w-8 h-8" onclick={()=>setIsDark(!isdark)} alt="" />':'<img src={closeEye} classname="w-8 h-8" onclick={()=>setIsDark(!isdark)} alt="" />'} */}
-      <img src={isdark?closeEye:openEye} className="w-8 h-8"  alt="" />
+    <div>
+    {loading ? <LoadingPage/>:<>
+    <div className="fixed right-0 bottom-2 h-fit p-4  rounded-tl-xl rounded-bl-xl roun dark:bg-white text-white shadow-lg shadow-black/50 bg-black z-50" onClick={()=>setIsDark(!isdark)}>
+      
+      <img src={isdark?closeEye:openEye} className="w-8 h-8 "  alt="" />
     </div>
       <NavBar />
       <Home />
@@ -35,7 +42,9 @@ function App() {
       <Education />
       <FooterForm />
       <ToastContainer />
-    </>
+    </>}
+    
+    </div>
   );
 }
 
