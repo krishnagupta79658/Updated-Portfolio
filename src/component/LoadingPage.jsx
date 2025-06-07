@@ -1,10 +1,10 @@
 export default function LoadingPage(){
 
 return (
-       <div className="flex justify-center items-center h-screen bg-white">
+       <div className="flex justify-center items-center h-screen bg-white dark:bg-[#121212]"> 
       <svg
         viewBox="0 0 500 100"
-        style={{ backgroundColor: "#121212" }} 
+       
         width="100%"
         height="100%"
         className="handwriting"
@@ -21,12 +21,12 @@ return (
           x="50%"
           y="50"
           textAnchor="middle"
-          fill="#121212"
+         fill="none"
           stroke="url(#text-gradient)"
           strokeWidth="2"
           fontFamily="Dancing Script, cursive"
           fontSize="48"
-          style={{ textWrap:"wrap"}}
+          
         >
           <tspan x="50%" dy="0">Welcome to</tspan>
     <tspan x="50%" dy="60">my Portfolio</tspan>

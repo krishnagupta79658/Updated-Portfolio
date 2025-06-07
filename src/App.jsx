@@ -18,6 +18,7 @@ function App() {
   const [isdark , setIsDark] = useState(true);
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isdark);
+    setloading(true);
   },[isdark]);
 
   useEffect(()=>{
@@ -25,7 +26,7 @@ function App() {
       setloading(false)
     }, 2000);
     return ()=>clearTimeout(timer)
-  })
+  },[loading])
   return (
     <div>
     {loading ? <LoadingPage/>:<>
