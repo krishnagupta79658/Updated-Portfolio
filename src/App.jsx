@@ -5,17 +5,17 @@ import Offer from "./component/Offer.jsx";
 import Experience from "./component/Experience.jsx";
 import Skills from "./component/Skills.jsx"
 import Projects from "./component/Projects.jsx";
+import LoadingPage from "./component/LoadingPage.jsx";
 import FooterForm from "./component/FooterForm.jsx"
 import openEye from "./assets/image/darkModeEye/openEye.png";
 import closeEye from "./assets/image/darkModeEye/closeEye.png";
 import { useEffect , useState } from "react"; 
-import LoadingPage from "./component/LoadingPage.jsx";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [loading, setloading] =useState(true)
-  const [isdark , setIsDark] = useState(true);
+  const [isdark , setIsDark] = useState(false);
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isdark);
     setloading(true);

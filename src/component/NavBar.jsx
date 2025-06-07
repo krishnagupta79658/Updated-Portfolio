@@ -42,9 +42,9 @@ function NavBar() {
       {/* Navigation Links */}
       <div className="flex flex-row justify-between w-full sm:w-7/12 ">
       <div className="flex items-center sm:gap-6 gap-3.5 text-lg link ">
-        <a href="#home" className="p-1 hover:text-[#90EEBF] border-2 border-transparent hover:border-[#90EEBF] hover:rounded-xl transition-all duration-150">Home</a>
-        <a href="https://drive.google.com/file/d/1pfShQ5tel4HmNN1Je9pxdMBJ3Z6D9fxi/view?usp=sharing" target="_blank" className="p-1 hover:text-[#90EEBF] border-2 border-transparent hover:border-[#90EEBF] hover:rounded-xl transition-all duration-150">Resume</a>
-        <a href="#contact" className="p-1 hover:text-[#90EEBF] border-2 border-transparent hover:border-[#90EEBF] hover:rounded-xl transition-all duration-150">Contact</a>
+        <a href="#home" className="p-1 hover:text-[#90EEBF] border-2 border-transparent hover:border-[#90EEBF] hover:rounded-xl hover:scale-125 transition-all duration-150">Home</a>
+        <a href="https://drive.google.com/file/d/1pfShQ5tel4HmNN1Je9pxdMBJ3Z6D9fxi/view?usp=sharing" target="_blank" className="p-1 hover:scale-125 hover:text-[#90EEBF] border-2 border-transparent hover:border-[#90EEBF] hover:rounded-xl transition-all duration-150">Resume</a>
+        <a href="#contact" className="p-1 hover:text-[#90EEBF] border-2 border-transparent hover:border-[#90EEBF] hover:rounded-xl hover:scale-125 transition-all duration-150">Contact</a>
       </div>
 
      
