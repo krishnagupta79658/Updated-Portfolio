@@ -1,4 +1,3 @@
-import django from "../assets/image/skills/django.svg"
 import react from "../assets/image/skills/react.svg"
 import nodejs from "../assets/image/skills/nodejs.svg"
 import monogo from "../assets/image/skills/mongodb.svg"
@@ -58,9 +57,6 @@ useEffect(() => {
             <div className="flex lg:flex-row flex-col-reverse justify-between items-center gap-4 mt-4 w-full ">
             <div className="lg:w-5/12 w-11/12 mx-auto  h-fit py-4 border-2 border-gray-200 rounded-lg overflow-x-hidden dark:bg-black dark:border-2 dark:border-[#2D3236]">
            <div className="flex w-[max-content] mx-auto justify-start" id="skillsDia">
-                <div className="min-w-24 sm:w-34  h-full flex justify-center sm:mx-2 py-2">
-                    <img src={django} alt="django" className="w-16 h-16 "/>
-                </div>
                 <div className="min-w-24 sm:w-34 h-full flex justify-center py-2 sm:mx-2 ">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="css" className="w-16 h-16"/>
                 </div>
@@ -88,17 +84,17 @@ useEffect(() => {
             <div className="lg:w-6/12 w h-fit p-2 flex flex-col">
                 <ul  className="list-disc flex flex-col gap-5 ">
                 <li className="text-[#59606E] text-lg"> <span className="text-black dark:text-[#DAE2F0] font-semibold"> Language:</span>
-                 C, C++, Python, JavaScript, Python 
+                 C, C++, Python, JavaScript
                  </li>
                  
                 <li className="text-[#59606E] text-lg"> <span className="text-black dark:text-[#DAE2F0] font-semibold"> Front-End:</span>
                  HTML, CSS, CSS Tailwind, JavaScript, ReactJS 
                  </li>
                  <li className="text-[#59606E] text-lg"> <span className="text-black dark:text-[#DAE2F0] font-semibold"> Back-End:</span>
-                 Django, Django Restframework, Python, JavaScript 
+                  Python, JavaScript 
                  </li>
                  <li className="text-[#59606E] text-lg"> <span className="text-black dark:text-[#DAE2F0] font-semibold"> Databases:</span>
-                 PostgresSql, MongoDB 
+                 SQLite, MongoDB 
                  </li>
                  <li className="text-[#59606E] text-lg"> <span className="text-black dark:text-[#DAE2F0] font-semibold"> Others Tools:</span>
                  Git, GitHub, Vercel, Render, VsCode  

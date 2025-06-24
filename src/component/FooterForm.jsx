@@ -96,13 +96,12 @@ const FooterForm = () => {
             <div className="md:w-5/12 h-fit p-1  flex flex-col justify-center items-center ">
                 <div className="w-fit h-fit text-4xl mb-6">
                     <span className="text-[#1F7B57] mr-2">{'< >'}</span>
-                    <p className="text-3xl inline dark:text-[#8B8F98]">Abhishek Kumar</p>
+                    <p className="text-3xl inline dark:text-[#8B8F98]">Krishna Gupta</p>
                 </div>
                 <div className="flex flex-row gap-7 justify-evenly mb-6 link-wrapper5">
-                    <a href="https://x.com/Abhishe7716700"><img src={twitter} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-lg dark:p-1 bg-red link5" alt="twitter" /></a>
-                    <a href="https://www.instagram.com/yourabhishek_a1/"><img src={instagram} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full bg-red link5"   alt="instagram" /></a>
-                    <a href="https://www.linkedin.com/in/abhishek-kumar983/"><img src={linkedin} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full bg-red link5"  alt="linkedin" /></a>
-                    <a href="https://www.reddit.com/user/Potential_Bee_4426/"><img src={reddit} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full bg-red link5"  alt="reddit" /></a>
+                    <a href="https://x.com/krishna_g1512"><img src={twitter} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-lg dark:p-1 bg-red link5" alt="twitter" /></a>
+                    <a href="https://www.instagram.com/krish_naaguptaa/"><img src={instagram} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full bg-red link5"   alt="instagram" /></a>
+                    <a href="https://www.linkedin.com/in/krishna-gupta-810800297//"><img src={linkedin} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full bg-red link5"  alt="linkedin" /></a>
  
                 </div>
                 <div className="text-lg flex gap-5 justify-between link-wrapper5">

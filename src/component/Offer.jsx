@@ -68,7 +68,7 @@ const  Offer=() =>{
                     <div className="mt-3 flex-grow">
                         <h1 className="text-3xl font-semibold text-[#111928] dark:text-white"> Database Management</h1>
                         <p className="text-xl text-[#7C818C] text-justify"> 
-                        Managing structured and unstructured data using SQLite, PostgreSQL, MongoDB, and Django ORM with efficient, secure integration.</p>
+                        Managing structured and unstructured data using SQLite, MongoDB, with efficient, secure integration.</p>
                     </div>
                 </div>
                 <div className="offerItem w-full h-full flex flex-col rounded-lg border-2 border-[#DDE0E4] p-3">
@@ -77,7 +77,7 @@ const  Offer=() =>{
                     <div className="mt-3 flex-grow">
                         <h1 className="text-3xl font-semibold text-[#111928] dark:text-white"> API Development</h1>
                         <p className="text-xl text-[#7C818C] text-justify"> 
-                        Developing secure and scalable RESTfulAPIs using Django REST Framework and Node.js for efficient data flow and integration.
+                        Developing secure and scalable RESTfulAPIs using  Node.js for efficient data flow and integration.
                          </p>
                     </div>
                 </div>

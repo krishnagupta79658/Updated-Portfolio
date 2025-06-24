@@ -2,7 +2,6 @@ import NavBar from "./component/NavBar";
 import Home from "./component/Home";
 import Education from "./component/Education.jsx";
 import Offer from "./component/Offer.jsx";
-import Experience from "./component/Experience.jsx";
 import Skills from "./component/Skills.jsx"
 import Projects from "./component/Projects.jsx";
 import LoadingPage from "./component/LoadingPage.jsx";
@@ -37,7 +36,6 @@ function App() {
       <NavBar />
       <Home />
       <Offer />
-      <Experience />
       <Projects />
       <Skills />
       <Education />

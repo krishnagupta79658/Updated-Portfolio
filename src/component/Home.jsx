@@ -115,7 +115,7 @@ tl1.from(".animaFront", {
       const taskToCount = (count) => {
         var start =0;
         const end=parseInt(document.querySelector(`.${count}`).textContent.replace("+",""));
-        console.log("abhishek",end)
+        console.log("krishna",end)
         const duration=1;
         const timeToEachIncreament= duration/end
         const intervalID=setInterval(() => {
@@ -159,19 +159,18 @@ useGSAP(() => {
             <div className='flex flex-col justify-center w-fit h-fit mx-auto'>
                 <img src={myPhoto} className="photo mx-auto w-[200px] h-[200px] md:h-[250px] md:w-[250px] lg:w-[300px] lg:h-[300px] rounded-full"  alt="my photo"/>
                 <div className="flex flex-row gap-7 justify-between mt-5 mx-8 " >
-                                    <a href="https://x.com/Abhishe7716700" className='twitter'><img src={twitter} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-lg dark:p-1" alt="twitter" /></a>
-                                    <a href="https://www.instagram.com/yourabhishek_a1/" className='insta'><img src={instagram} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full"  alt="instagram" /></a>
-                                    <a href="https://www.linkedin.com/in/abhishek-kumar983/" className='linked'><img src={linkedin} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full" alt="linkedin" /></a>
-                                    <a href="https://www.reddit.com/user/Potential_Bee_4426/" className='reddit'><img src={reddit} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full" alt="reddit" /></a>
+                                    <a href="https://x.com/krishna_g1512" className='twitter'><img src={twitter} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-lg dark:p-1" alt="twitter" /></a>
+                                    <a href="https://www.instagram.com/krish_naaguptaa//" className='insta'><img src={instagram} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full"  alt="instagram" /></a>
+                                    <a href="https://www.linkedin.com/in/krishna-gupta-810800297/" className='linked'><img src={linkedin} className="w-6 h-6 hover:scale-125 transition-all duration-150 dark:bg-white dark:rounded-full" alt="linkedin" /></a>
                                     </div>
                 </div>
             </div>
             <div className=" w-full sm:w-xl sm:mx-auto ">
                 <div className='h-fit flex flex-col justify-center p-1 lg:pr-4 '>
-                    <h3 className=' text-sm text-[#767D84] dark:text-[#FFFFFF] lg:text-lg'> <span className='text-[rgb(248,100,101)]'>{"<span>"}</span> Hey  I'm Abhishek Kumar <span className='text-[#F86465]'>{"</span>"}</span></h3>
+                    <h3 className=' text-sm text-[#767D84] dark:text-[#FFFFFF] lg:text-lg'> <span className='text-[rgb(248,100,101)]'>{"<span>"}</span> Hey  I'm Krishna Gupta <span className='text-[#F86465]'>{"</span>"}</span></h3>
                     <p className='text-xl text-[#111928] dark:text-white mt-5 lg:text-3xl '> Junior <span className='text-[#1F7B57] ' ref={spanFront}></span> | ReactJS &</p>
-                    <p className='text-xl text-[#111928]  lg:text-3xl dark:text-white '> <span className='text-[hsl(157,60%,30%)] ' ref={spanBack}> </span> | Django </p>
-                    <p className='mt-5 text-sm lg:text-lg text-wrap text-[#6D737F] dark:text-[#727989] text-justify '> <span className='text-[#F86465] pl-1'>{"<p>"}</span>I’m a developer focused on <span className='text-[#F86465] pr-1'>Django , Django Restframework and ReactJS.</span>
+                    <p className='text-xl text-[#111928]  lg:text-3xl dark:text-white '> <span className='text-[hsl(157,60%,30%)] ' ref={spanBack}> </span> | Nodejs </p>
+                    <p className='mt-5 text-sm lg:text-lg text-wrap text-[#6D737F] dark:text-[#727989] text-justify '> <span className='text-[#F86465] pl-1'>{"<p>"}</span>I’m a developer focused on <span className='text-[#F86465] pr-1'>Nodejs and ReactJS.</span>
                        I build full-stack web applications with clean APIs, responsive UIs, 
                     and efficient data management. <span className='text-[#F86465]'>{"</p>"}</span></p>
                     

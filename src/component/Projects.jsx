@@ -1,6 +1,6 @@
-import chatbot from "../assets/image/projects/chatbot.png"
-import weather from "../assets/image/projects/weather.png"
-import ATM_Banking from "../assets/image/projects/ATM_Banking.png"
+import chatbot from "../assets/image/projects/buzzplay.png"
+import weather from "../assets/image/projects/code-reviewer.png"
+import ATM_Banking from "../assets/image/projects/Blogify.png"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -123,11 +123,10 @@ useGSAP(() => {
                     </div>
                     <div className="lg:w-7/12 h-fit">
                     <h1 className="sm:text-3xl text-2xl text-[#1F7B57]">
-                        Ai integrated into the Website Chatbot
+                       Buzzplay
                     </h1>
                     <p className="mt-2 md:w-5/6 text-[#59606E] text-lg text-justify lg:text-start"> 
-                        A website chatbot that uses the Gemini API to answer user queries based on the content of a given website.
-                        </p>
+BuzzPlay is a backend system for video streaming, developed using Node.js, Express, and MongoDB. It includes secure user authentication with JWT and uses Cloudinary to manage and store media files efficiently. The use of MongoDB’s aggregation pipeline ensures smooth and optimized data processing.                        </p>
 
                     <p className="mt-5 text-[#F86465] text-lg"> Project Info</p>
                     <img src={chatbot} className="rounded-lg h-full lg:hidden  z-30 smProjectImg1 " alt="" />
@@ -135,7 +134,7 @@ useGSAP(() => {
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
                                 <p className="text-[#59606E]  dark:text-[#DEE7F6]  text-lg">Project Name:</p>
-                                <p className="text-[#59606E]  dark:text-[#DEE7F6] text-lg">Chatbot</p>
+                                <p className="text-[#59606E]  dark:text-[#DEE7F6] text-lg">Buzzplay</p>
                             </div>
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
@@ -145,11 +144,11 @@ useGSAP(() => {
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
                                 <p className="text-[#59606E]  dark:text-[#DEE7F6] text-lg">Technologies:</p>
-                                <p className="text-[#59606E]  dark:text-[#DEE7F6] text-lg flex-shrink">Django, Django Restframework, ReactJS and MongoDB</p>
+                                <p className="text-[#59606E]  dark:text-[#DEE7F6] text-lg flex-shrink">Nodejs, ReactJS and MongoDB</p>
                             </div>
                             <div className="flex mt-7 gap-2 ">
-                                <a href="https://chatbot-alpha-mauve-80.vercel.app/" target="_blank" className="underline text-[#1F7B57] text-xl hover:text-[rgb(248,100,101)] mr-7 "> Live Demo</a>
-                                <a href="https://github.com/Abhicoder983/CHATBOT" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black  dark:text-[#DEE7]">View on Github</a>
+                               
+                                <a href="https://github.com/krishnagupta79658/BuzzPlay" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black  dark:text-[#DEE7]">View on Github</a>
                             </div>
 
                         </div>
@@ -169,11 +168,10 @@ useGSAP(() => {
                     </div>
                     <div className="lg:w-7/12 h-fit">
                     <h1 className="md:text-3xl text-2xl text-[#1F7B57]">
-                        Giving Currect Weather of the City
+                        Code-Reviewer
                     </h1>
                     <p className="mt-2 md:w-5/6 text-[#59606E] text-lg text-justify lg:text-start"> 
-                    A weather web application that fetches real-time weather data using the OpenWeather API to display current conditions and forecasts based on user location.
-                        </p>
+Code Reviewer is an AI-powered code review tool built using the MERN stack and integrated with the Google Gemini API for real-time feedback. It allows users to input code and receive suggestions, optimizations, and error detection through REST API and Axios. User sessions are secured with JWT, ensuring safe and seamless interaction with the AI.                        </p>
 
                     <p className="mt-5 text-[#F86465] text-lg"> Project Info</p>
                     <img src={weather} className="rounded-lg h-full lg:hidden z-20 smProjectImg2 " alt="" />
@@ -181,7 +179,7 @@ useGSAP(() => {
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
                                 <p className="text-[#59606E] text-lg dark:text-[#DEE7F6] ">Project Name:</p>
-                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6]">Weather Web Application</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6]">Code-Reviewer</p>
                             </div>
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
@@ -191,11 +189,10 @@ useGSAP(() => {
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
                                 <p className="text-[#59606E] text-lg dark:text-[#DEE7F6] ">Technologies:</p>
-                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6]  flex-shrink">Django, ReactJS, openweather API</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6]  flex-shrink">Nodejs, ReactJS, Google Gemini API</p>
                             </div>
                             <div className="flex mt-7 gap-2 ">
-                                <a href="https://weather-app-one-neon-69.vercel.app/" target="_blank" className="underline text-[#1F7B57] text-xl hover:text-[rgb(248,100,101)] mr-7 "> Live Demo</a>
-                                <a href="https://github.com/Abhicoder983/weather_app" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black  dark:text-[#DEE7]">View on Github</a>
+                                <a href="https://github.com/krishnagupta79658/Code-Reviewer" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black  dark:text-[#DEE7]">View on Github</a>
                             </div>
                         </div>
                     </div>
@@ -214,10 +211,9 @@ useGSAP(() => {
                     </div>
                     <div className="lg:w-7/12 h-fit">
                     <h1 className="sm:text-3xl text-[#1F7B57] text-2xl">
-                        Two Projects Railway and another Banking Management System
-                    </h1>
+Blogify                    </h1>
                     <p className="mt-2 md:w-5/6 text-[#59606E] text-lg text-justify lg:text-start"> 
-                       Railway and Banking Management System are two projects that include all the features and fuctionalities of a railway and banking system, respectively.
+Blogify is a dynamic blogging platform built with Node.js, Express, and MongoDB, using EJS for seamless frontend rendering. It supports full CRUD operations for posts and users through RESTful APIs. The platform features a responsive design with Bootstrap and efficient data handling using Mongoose.
                        </p>
 
                     <p className="mt-5 text-[#F86465] text-lg"> Project Info</p>
@@ -226,7 +222,7 @@ useGSAP(() => {
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
                                 <p className="text-[#59606E] text-lg dark:text-[#DEE7F6] ">Project Name:</p>
-                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6 dark:text-[#DEE7]]">Railway and Banking Management System</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6 dark:text-[#DEE7]]">Blogify</p>
                             </div>
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
@@ -236,12 +232,12 @@ useGSAP(() => {
 
                             <div className="flex flex-row gap-3 justify-between border-b-2 border-[#c3c4c5] pb-2">
                                 <p className="text-[#59606E] text-lg dark:text-[#DEE7F6] ">Technologies:</p>
-                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6]  flex-shrink">Python, Mysql</p>
+                                <p className="text-[#59606E] text-lg dark:text-[#DEE7F6]  flex-shrink">Nodejs, Mysql</p>
                             </div>
 
                             <div className="flex mt-7 gap-2 ">
                                 
-                                <a href="https://github.com/Abhicoder983/Project-Related-to-Python" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black  dark:text-[#DEE7]">View on Github</a>
+                                <a href="https://github.com/krishnagupta79658/Code-Reviewer" target="_blank" className="hover:text-[rgb(248,100,101)] text-xl underline text-black  dark:text-[#DEE7]">View on Github</a>
                             </div>
                         </div>
                     </div>

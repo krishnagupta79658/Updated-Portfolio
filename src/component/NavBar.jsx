@@ -36,23 +36,23 @@ function NavBar() {
 
       {/* Logo or Brand */}
       <div className="m-1 sm:w-5/12 font-semibold text-xl z-10 name ">
-        <span className="text-[#90EEBF] font-bold">{"<>"}</span> ABHISHEK KUMAR
+        <span className="text-[#90EEBF] font-bold">{"<>"}</span> KRISHNA GUPTA
       </div>
 
       {/* Navigation Links */}
       <div className="flex flex-row justify-between w-full sm:w-7/12 ">
       <div className="flex items-center sm:gap-6 gap-3.5 text-lg link ">
         <a href="#home" className="p-1 hover:text-[#90EEBF] border-2 border-transparent hover:border-[#90EEBF] hover:rounded-xl hover:scale-125 transition-all duration-150">Home</a>
-        <a href="https://drive.google.com/file/d/1pfShQ5tel4HmNN1Je9pxdMBJ3Z6D9fxi/view?usp=sharing" target="_blank" className="p-1 hover:scale-125 hover:text-[#90EEBF] border-2 border-transparent hover:border-[#90EEBF] hover:rounded-xl transition-all duration-150">Resume</a>
+        <a href="https://drive.google.com/file/d/1Bq_qRMItsaOdPoYp9zGdLRSOROyU9Eqr/view?usp=sharing" target="_blank" className="p-1 hover:scale-125 hover:text-[#90EEBF] border-2 border-transparent hover:border-[#90EEBF] hover:rounded-xl transition-all duration-150">Resume</a>
         <a href="#contact" className="p-1 hover:text-[#90EEBF] border-2 border-transparent hover:border-[#90EEBF] hover:rounded-xl hover:scale-125 transition-all duration-150">Contact</a>
       </div>
 
      
       <div className="flex items-center gap-3.5 sm:gap-6 codeLink  ">
 
-        <a href="https://leetcode.com/u/abhishek_coder983/" target="_blank"><img src={leetCode} className="w-8 h-8 hover:scale-125 transition-all duration-150" alt="leetcode" /></a>
-        <a href="https://www.geeksforgeeks.org/user/ruhelab5q54/" target="_blank"><img src={gfg} className="w-8 h-8 hover:scale-125 transition-all duration-150" alt="gfg" /></a>
-        <a href="https://github.com/Abhicoder983" target="_blank"><img src={github} className="w-8 h-8 hover:scale-125 transition-all duration-150" alt="github" /></a>
+        <a href="https://leetcode.com/u/winner_krishna/" target="_blank"><img src={leetCode} className="w-8 h-8 hover:scale-125 transition-all duration-150" alt="leetcode" /></a>
+        <a href="https://www.geeksforgeeks.org/user/krishnaguprkx/" target="_blank"><img src={gfg} className="w-8 h-8 hover:scale-125 transition-all duration-150" alt="gfg" /></a>
+        <a href="https://github.com/krishnagupta79658" target="_blank"><img src={github} className="w-8 h-8 hover:scale-125 transition-all duration-150" alt="github" /></a>
       </div>
       </div>
     </nav>
